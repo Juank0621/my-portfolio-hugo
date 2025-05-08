@@ -1,0 +1,33 @@
+<footer class="bg-gray-800 text-white py-8 border-t border-gray-700">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <!-- Left: Logo, Roles, City, Email -->
+      <div class="mb-4 md:mb-0 flex flex-col items-start">
+        <a href="/#home" class="flex items-center mb-4">
+          <span class="text-3xl font-bold text-white font-heading align-middle">Juan Carlos Garzon</span>
+        </a>
+        <div class="text-gray-300 text-lg mb-1">Computer Vision Engineer | AI Developer | Data Scientist</div>
+        <div class="text-gray-400 text-base mb-1 flex items-center">
+          <i class="fas fa-map-marker-alt mr-2"></i>Montreal, Canada
+        </div>
+        <a href="mailto:{{ .Site.Params.email }}" class="text-gray-400 hover:text-purple-400 text-base flex items-center">
+          <i class="fas fa-envelope mr-2"></i>{{ .Site.Params.email }}
+        </a>
+      </div>
+    </div>
+    <!-- Copyright and Social Media on the same line -->
+    <div class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-gray-400 text-base">
+      <div class="w-full md:w-auto text-left">© 2025 Juan Carlos Garzon. All rights reserved.</div>
+      <div class="flex flex-row space-x-6 items-center mt-4 md:mt-0">
+        <a href="{{ .Site.Params.linkedin_url }}" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">
+          <i class="fab fa-linkedin-in text-3xl"></i>
+        </a>
+        <a href="{{ .Site.Params.github_url }}" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">
+          <i class="fab fa-github text-3xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+

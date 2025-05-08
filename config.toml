@@ -1,0 +1,71 @@
+baseURL = "https://juangarzon.me"
+languageCode = "en-us"
+title = "Juan Carlos Garzon"
+
+[params]
+logo = "/images/logo.png"
+favicon = "/images/favicon.ico"
+name = "Juan Carlos Garzon"
+tagline = "AI Engineer. Computer Vision Specialist. Problem Solver."
+location = "Montreal, Canada"
+email = "hello@juangarzon.me"
+phone = "+1 438 773-4784"
+profile_image = "/images/profile.jpg"
+description = "Computer Engineer specializing in AI, Computer Vision, and Machine Learning, with experience in developing real-time object detection systems and AI agents."
+author = "Juan Carlos Garzon"
+
+og_image = "images/juan-garzon-og.png"
+
+hero_description = "Computer Engineer with 5+ years of experience, specializing in Computer Vision, Real-Time Object Detection, and NLP using Transformers and LLMs. Building innovative AI solutions for real-world challenges."
+hero_location = "Montreal, Canada"
+
+linkedin_url = "https://www.linkedin.com/in/juancarlosgarzon"
+linkedin_text = "linkedin.com/in/juancarlosgarzon"
+github_url = "https://github.com/Juank0621"
+github_text = "github.com/Juank0621"
+
+copyright = "© 2024 | Juan Carlos Garzon"
+
+resume_url_en = "/files/Juan_Carlos_Garzon_Resume_en.pdf"
+resume_url_fr = "/files/Juan_Carlos_Garzon_Resume_fr.pdf"
+resume_label = "Download Full Resume"
+
+[[params.social]]
+icon = "linkedin-in"
+url = "https://www.linkedin.com/in/juancarlosgarzon/"
+
+[[params.social]]
+icon = "github"
+url = "https://github.com/Juank0621"
+
+sectionPagesMenu = 'main'
+
+[[menu.main]]
+  name = "About"
+  url = "/#about"
+  weight = 2
+
+[[menu.main]]
+  name = "Skills"
+  url = "/#skills"
+  weight = 3
+
+[[menu.main]]
+  name = "Experience"
+  url = "/#experience"
+  weight = 4
+
+[[menu.main]]
+  name = "Contact"
+  url = "/#contact"
+  weight = 5
+
+[taxonomies]
+  tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+
+
+

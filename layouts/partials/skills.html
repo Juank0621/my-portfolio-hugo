@@ -1,0 +1,132 @@
+<!-- Skills Section --> 
+<section id="skills" class="bg-gray-900 text-gray-100 py-20 relative overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="stars"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    {{ with .Site.GetPage "skills" }}
+
+      <!-- Section heading -->
+      <h2 class="text-3xl font-heading font-bold text-center mb-12 text-gray-100">
+        {{ .Params.intro }}
+      </h2>
+
+      <!-- Domain grid -->
+      <div class="hidden md:grid grid-cols-3 gap-6 mb-12">
+        {{ range $i, $domain := .Params.domains }}
+          {{ if lt $i 3 }}
+            <div class="bg-gray-800 bg-opacity-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 project-card w-full text-center animate-float">
+              <div class="project-inner flex flex-col items-center hover:scale-105 transition duration-300">
+                <div class="bg-gray-700 bg-opacity-50 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <i class="fas fa-{{ $domain.icon }} text-gray-300 text-2xl" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-xl font-heading font-semibold mb-2 text-gray-100">{{ $domain.title }}</h3>
+                <p class="text-gray-300 text-base font-sans">
+                  {{ if eq $domain.title "Programming" }}Python, SQL, and automation for robust, maintainable solutions.{{ else }}{{ $domain.description }}{{ end }}
+                </p>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+        <div class="col-span-3 flex justify-center gap-6 mt-6">
+          {{ range $i, $domain := .Params.domains }}
+            {{ if ge $i 3 }}
+              <div class="bg-gray-800 bg-opacity-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 project-card w-full max-w-[384px] text-center animate-float">
+                <div class="project-inner flex flex-col items-center hover:scale-105 transition duration-300">
+                  <div class="bg-gray-700 bg-opacity-50 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-{{ $domain.icon }} text-gray-300 text-2xl" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="text-xl font-heading font-semibold mb-2 text-gray-100">{{ $domain.title }}</h3>
+                  <p class="text-gray-300 text-base font-sans">
+                    {{ if eq $domain.title "Programming" }}Python, SQL, and automation for robust, maintainable solutions.{{ else }}{{ $domain.description }}{{ end }}
+                  </p>
+                </div>
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <!-- Mobile layout -->
+      <div class="md:hidden grid grid-cols-1 gap-6 mb-12">
+        {{ range $i, $domain := .Params.domains }}
+        <div class="bg-gray-800 bg-opacity-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 project-card text-center animate-float">
+          <div class="project-inner flex flex-col items-center hover:scale-105 transition duration-300">
+            <div class="bg-gray-700 bg-opacity-50 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-{{ $domain.icon }} text-gray-300 text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-heading font-semibold mb-2 text-gray-100">{{ $domain.title }}</h3>
+            <p class="text-gray-300 text-base font-sans">
+              {{ if eq $domain.title "Programming" }}Python, SQL, and automation for robust, maintainable solutions.{{ else }}{{ $domain.description }}{{ end }}
+            </p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Technical skills -->
+      <h3 class="text-2xl font-semibold text-center mb-6 font-heading text-gray-100">
+        {{ .Params.technical_title }}
+      </h3>
+      <div class="flex flex-wrap justify-center gap-6 items-center">
+        <div class="relative group">
+          <img src="/icons/FastAPI.svg" alt="FastAPI" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">FastAPI</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/Git.svg" alt="Git" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">Git</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/GoogleCloud.svg" alt="Google Cloud" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">Google Cloud</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/Jira.svg" alt="Jira" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">Jira</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/Langchain.svg" alt="Langchain" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">LangChain</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/langgraph.svg" alt="LangGraph" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">LangGraph</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/Llamaindex.svg" alt="LlamaIndex" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">LlamaIndex</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/MongoDB.svg" alt="MongoDB" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">MongoDB</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/PostgresSQL.svg" alt="PostgresSQL" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">PostgresSQL</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/Python.svg" alt="Python" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">Python</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/PyTorch.svg" alt="PyTorch" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">PyTorch</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/scikit-learn.svg" alt="scikit-learn" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">scikit-learn</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/TensorFlow.svg" alt="TensorFlow" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">TensorFlow</span>
+        </div>
+        <div class="relative group">
+          <img src="/icons/HF.svg" alt="Hugging Face" class="h-16 w-16 object-contain transition-transform duration-200 hover:scale-125 hover:grayscale cursor-pointer" />
+          <span class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">Hugging Face</span>
+        </div>
+      </div>
+
+    {{ end }}
+  </div>
+</section>
+  

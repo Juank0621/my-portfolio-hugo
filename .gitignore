@@ -1,0 +1,32 @@
+# Hugo output
+public/
+resources/
+
+# Node dependencies
+node_modules/
+package-lock.json
+yarn.lock
+yarn-error.log
+
+# System files
+.DS_Store
+*.log
+
+# Env files (for local secrets, not used in static Hugo but good practice)
+*.env
+*.env.local
+*.env.development
+*.env.production
+.env.*
+
+# Vercel/Netlify/other build artifacts (if you use them)
+.vercel/
+.netlify/
+
+# Hugo build lock
+.hugo_build.lock
+
+# Compressed files
+*.tar
+*.zip
+*.gz
