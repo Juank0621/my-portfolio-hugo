@@ -1,5 +1,7 @@
 # Juan Carlos Garzon Portfolio
 
+[![Live Site](https://img.shields.io/badge/Live%20Site-juangarzon.me-blue?style=flat-square&logo=vercel)](https://juangarzon.me)
+
 This is a personal portfolio website built with [Hugo](https://gohugo.io/), styled with [Tailwind CSS](https://tailwindcss.com/), and deployed on [Vercel](https://vercel.com/). It features sections for About, Skills, Experience, and Contact, with a modern, responsive design.
 
 ## 🚀 Features
