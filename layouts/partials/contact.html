@@ -41,49 +41,49 @@
       <div class="lg:w-1/2">
         {{ with .Site.GetPage "contact" }}
         <div class="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg h-full">
-          <h3 class="text-xl font-semibold mb-6 text-gray-100">{{ .Params.contact_info.title }}</h3>
-          <p class="mb-8 text-gray-300">{{ .Params.contact_info.description }}</p>
-          <div class="space-y-6">
+          <h3 class="text-xl font-semibold mb-8 text-gray-100">{{ .Params.contact_info.title }}</h3>
+          <p class="mb-12 text-gray-300">{{ .Params.contact_info.description }}</p>
+          <div class="space-y-8">
             <!-- Email -->
             <div class="flex items-start">
-              <div class="bg-gray-700 bg-opacity-50 w-10 h-10 flex items-center justify-center rounded-full mr-4">
+              <div class="bg-gray-700 bg-opacity-50 w-12 h-12 flex items-center justify-center rounded-full mr-5">
                 <i class="fas fa-{{ .Params.contact_info.email.icon }} text-gray-300 text-xl"></i>
               </div>
               <div>
-                <h4 class="font-medium text-gray-100">{{ .Params.contact_info.email.title }}</h4>
+                <h4 class="font-medium text-gray-100 mb-1">{{ .Params.contact_info.email.title }}</h4>
                 <a href="mailto:{{ .Params.contact_info.email.value }}" class="text-gray-300 hover:text-white">{{ .Params.contact_info.email.value }}</a>
               </div>
             </div>
 
             <!-- LinkedIn -->
             <div class="flex items-start">
-              <div class="bg-gray-700 bg-opacity-50 w-10 h-10 flex items-center justify-center rounded-full mr-4">
+              <div class="bg-gray-700 bg-opacity-50 w-12 h-12 flex items-center justify-center rounded-full mr-5">
                 <i class="fab fa-{{ .Params.contact_info.linkedin.icon }} text-gray-300 text-xl"></i>
               </div>
               <div>
-                <h4 class="font-medium text-gray-100">{{ .Params.contact_info.linkedin.title }}</h4>
+                <h4 class="font-medium text-gray-100 mb-1">{{ .Params.contact_info.linkedin.title }}</h4>
                 <a href="https://{{ .Params.contact_info.linkedin.value }}" target="_blank" class="text-gray-300 hover:text-white">{{ .Params.contact_info.linkedin.value }}</a>
               </div>
             </div>
 
             <!-- GitHub -->
             <div class="flex items-start">
-              <div class="bg-gray-700 bg-opacity-50 w-10 h-10 flex items-center justify-center rounded-full mr-4">
+              <div class="bg-gray-700 bg-opacity-50 w-12 h-12 flex items-center justify-center rounded-full mr-5">
                 <i class="fab fa-{{ .Params.contact_info.github.icon }} text-gray-300 text-xl"></i>
               </div>
               <div>
-                <h4 class="font-medium text-gray-100">{{ .Params.contact_info.github.title }}</h4>
+                <h4 class="font-medium text-gray-100 mb-1">{{ .Params.contact_info.github.title }}</h4>
                 <a href="https://{{ .Params.contact_info.github.value }}" target="_blank" class="text-gray-300 hover:text-white">{{ .Params.contact_info.github.value }}</a>
               </div>
             </div>
 
             <!-- Location -->
             <div class="flex items-start">
-              <div class="bg-gray-700 bg-opacity-50 w-10 h-10 flex items-center justify-center rounded-full mr-4">
+              <div class="bg-gray-700 bg-opacity-50 w-12 h-12 flex items-center justify-center rounded-full mr-5">
                 <i class="fas fa-{{ .Params.contact_info.location.icon }} text-gray-300 text-xl"></i>
               </div>
               <div>
-                <h4 class="font-medium text-gray-100">{{ .Params.contact_info.location.title }}</h4>
+                <h4 class="font-medium text-gray-100 mb-1">{{ .Params.contact_info.location.title }}</h4>
                 <p class="text-gray-300">{{ .Params.contact_info.location.value }}</p>
               </div>
             </div>
