@@ -42,10 +42,10 @@
         {{ with .Site.GetPage "contact" }}
         <div class="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg h-full">
           <h3 class="text-xl font-semibold mb-6 text-gray-100">{{ .Params.contact_info.title }}</h3>
-          <p class="mb-6 text-gray-300">{{ .Params.contact_info.description }}</p>
-          <div class="space-y-8 divide-y divide-gray-700">
+          <p class="mb-8 text-gray-300">{{ .Params.contact_info.description }}</p>
+          <div class="space-y-6">
             <!-- Email -->
-            <div class="flex items-start pt-8">
+            <div class="flex items-start">
               <div class="bg-gray-700 bg-opacity-50 w-10 h-10 flex items-center justify-center rounded-full mr-4">
                 <i class="fas fa-{{ .Params.contact_info.email.icon }} text-gray-300 text-xl"></i>
               </div>
@@ -56,7 +56,7 @@
             </div>
 
             <!-- LinkedIn -->
-            <div class="flex items-start pt-4">
+            <div class="flex items-start">
               <div class="bg-gray-700 bg-opacity-50 w-10 h-10 flex items-center justify-center rounded-full mr-4">
                 <i class="fab fa-{{ .Params.contact_info.linkedin.icon }} text-gray-300 text-xl"></i>
               </div>
@@ -67,7 +67,7 @@
             </div>
 
             <!-- GitHub -->
-            <div class="flex items-start pt-4">
+            <div class="flex items-start">
               <div class="bg-gray-700 bg-opacity-50 w-10 h-10 flex items-center justify-center rounded-full mr-4">
                 <i class="fab fa-{{ .Params.contact_info.github.icon }} text-gray-300 text-xl"></i>
               </div>
@@ -78,7 +78,7 @@
             </div>
 
             <!-- Location -->
-            <div class="flex items-start pt-4">
+            <div class="flex items-start">
               <div class="bg-gray-700 bg-opacity-50 w-10 h-10 flex items-center justify-center rounded-full mr-4">
                 <i class="fas fa-{{ .Params.contact_info.location.icon }} text-gray-300 text-xl"></i>
               </div>
