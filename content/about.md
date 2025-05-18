@@ -7,7 +7,6 @@ intro: >
 study: >
   Currently in Montreal, I'm pursuing an **ACS in AI and Machine Learning** at LaSalle College and a **Master's in Big Data and Business Analytics** from IMF Smart Education, enhancing my expertise in cutting-edge AI technologies.
 
-passion_title: "What I'm passionate about"
 passion_text: >
   I'm passionate about developing innovative AI solutions. At **Techcolca Inc.**, I work on real-time object detection systems using **Ultralytics YOLO** and build scalable backends with **FastAPI** for sports analytics applications.
 

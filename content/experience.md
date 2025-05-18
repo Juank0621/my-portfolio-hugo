@@ -2,8 +2,6 @@
 title: "Professional Experience"
 
 intro: "Professional Experience"
-resume_url: "#"
-resume_label: "Download Full Resume"
 
 positions:
   - company: "Techcolca Inc."
@@ -27,21 +25,4 @@ positions:
       - "Work Methodology Development: Defined and implemented effective work methodologies to enhance team performance and decision-making."
       - "Creating Analytical Dashboards: Designed worksheets and dashboards to analyze data and present insights clearly."
       - "Personal Administration: Oversaw personal administration tasks to ensure efficient operation within the team."
-
-education:
-  - degree: "Attestations of Collegial Studies (ACS) – Artificial Intelligence and Machine Learning"
-    period: "2023 – Present"
-    institution: "LaSalle College, Montreal, QC"
-  - degree: "Master's Degree in Big Data and Business Analytics (Online)"
-    period: "2023 – Present"
-    institution: "IMF Smart Education, Madrid, Spain"
-  - degree: "Bachelor's Degree in Computer Engineering"
-    period: "2010 – 2014"
-    institution: "'Marco Fidel Suárez' Military Aviation School, Colombia"
-
-certifications:
-  - "Deep Learning Specialization (May 2025)"
-  - "DeepLearning.AI TensorFlow Developer Professional Certificate (November 2024)"
-  - "Azure Data Fundamentals (May 2024)"
-  - "IBM Data Science Professional Certificate (April 2023)"
 ---
