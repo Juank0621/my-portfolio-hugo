@@ -39,8 +39,6 @@ technical_skills:
     icon: "/icons/Langchain.svg"
   - name: "LangGraph"
     icon: "/icons/langgraph.svg"
-  - name: "LlamaIndex"
-    icon: "/icons/Llamaindex.svg"
   - name: "MongoDB"
     icon: "/icons/MongoDB.svg"
   - name: "PostgresSQL"
